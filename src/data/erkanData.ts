@@ -437,6 +437,24 @@ export const PVC_ALUMINUM_VIDEOS: PvcAluminumVideo[] = [
       'Çok katlı merdiven ve galeri boşluğu için gold detaylı eloksal alüminyum korkuluk ve küpeşte montajı.',
     videoSrc: '/assets/aistudio/1118_1ec71705.mp4',
   },
+  {
+    id: 'egepen-yeni-nesil-makine-parkuru',
+    title: 'Egepen PVC Otomasyonlu Yeni Nesil Üretim Parkuru',
+    category: 'Egepen Üretim Atölyesi',
+    summary:
+      'Yeni nesil CNC ve otomasyonlu PVC işleme merkezlerimizle yüksek hassasiyetli doğrama ve profil üretimi.',
+    videoSrc:
+      '/assets/aistudio/AQOC712G3JxhjZEroQQZoGMNIfnFNhiYp0EjildRf2c5cegnvet1UH6NVGTAK420Xc5t2r_p2ygZSi3XH8r3uGlgGUj6zJx5eLya8_w_9038a3e4.mp4',
+  },
+  {
+    id: 'egepen-atolye-uretim-ekibi',
+    title: 'Egepen PVC Profil İşleme & Atölye Üretim Süreci',
+    category: 'Egepen PVC',
+    summary:
+      'Penmak ve Entech otomasyon makinelerinde uzman ekibimizle gerçekleştirilen milimetrik Egepen PVC doğrama imalatı.',
+    videoSrc:
+      '/assets/aistudio/AQPkQLiDC-Xe1OM5mZXp3AhngMVNY_UsBJej3hzmktfiq0jl4o-B9UVTAqt2VnWToL9H4pyNNd57rQRnazcgE6acN8DKqzNosWNF1jo_3d3cd293.mp4',
+  },
 ];
 
 export interface WhyUsItem {
