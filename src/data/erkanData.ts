@@ -21,6 +21,7 @@ export type PageId =
   | 'home'
   | 'hakkimizda'
   | 'hizmetlerimiz'
+  | 'pvc-aluminyum'
   | 'uretim'
   | 'calismalar'
   | 'iletisim';
@@ -34,7 +35,8 @@ export interface NavRoute {
 export const NAV_ROUTES: NavRoute[] = [
   { id: 'home', label: 'Ana Sayfa', hash: '#ana-sayfa' },
   { id: 'hakkimizda', label: 'Hakkımızda', hash: '#hakkimizda' },
-  { id: 'hizmetlerimiz', label: 'Hizmetlerimiz', hash: '#hizmetlerimiz' },
+  { id: 'hizmetlerimiz', label: 'Mobilya Hizmetleri', hash: '#hizmetlerimiz' },
+  { id: 'pvc-aluminyum', label: 'PVC & Alüminyum', hash: '#pvc-aluminyum' },
   { id: 'uretim', label: 'Nasıl Çalışıyoruz?', hash: '#nasil-calisiyoruz' },
   { id: 'calismalar', label: 'Çalışmalarımız', hash: '#calismalarimiz' },
   { id: 'iletisim', label: 'İletişim', hash: '#iletisim' },
@@ -318,6 +320,122 @@ export const SERVICES: ServiceItem[] = [
     description:
       'İşi taşerona bırakmıyoruz; atölyemizde ürettiğimiz mobilyaları kendi deneyimli ustalarımızla evinize temiz şekilde kuruyoruz.',
     highlights: ['Kendi usta ekibimiz', 'Temiz ve düzenli kurulum', 'Zamanında teslimat'],
+  },
+];
+
+export interface PvcAluminumItem {
+  id: string;
+  number: string;
+  title: string;
+  subtitle: string;
+  description: string;
+  highlights: string[];
+  image: string;
+}
+
+export const PVC_ALUMINUM_SERVICES: PvcAluminumItem[] = [
+  {
+    id: 'egepen-pvc',
+    number: '01',
+    title: 'Egepen PVC Sistemleri',
+    subtitle: 'Egepen Marka Pencere & Kapı Sistemleri',
+    description:
+      'Yüksek ısı ve ses yalıtımı sağlayan Egepen marka PVC pencere ve kapı sistemlerini, tam donanımlı ve otomasyonlu işleme merkezine sahip atölyemizde milimetrik hassasiyetle üretip monte ediyoruz.',
+    highlights: [
+      'Egepen marka PVC pencere ve kapı sistemleri',
+      'Modern, kaliteli ve dayanıklı PVC çözümleri',
+      'Tam donanımlı ve otomasyonlu işleme merkezinde üretim',
+    ],
+    image: '/assets/aistudio/unnamed__13__1bda31d6.webp',
+  },
+  {
+    id: 'aluminyum-cephe',
+    number: '02',
+    title: 'Alüminyum Cephe Sistemleri',
+    subtitle: 'Estetik & Dayanıklı Cephe Uygulamaları',
+    description:
+      'Konut, villa ve ticari yapılar için modern mimariyle bütünleşen alüminyum cephe kaplama ve doğrama uygulamalarıyla uzun ömürlü dış cephe çözümleri sunuyoruz.',
+    highlights: [
+      'Alüminyum cephe kaplama uygulamaları',
+      'Modern mimariye uygun estetik cephe çözümleri',
+      'Dış hava koşullarına karşı yüksek dayanım',
+    ],
+    image: '/assets/aistudio/unnamed__12__dc2f95af.webp',
+  },
+  {
+    id: 'modern-uretim-atolyesi',
+    number: '03',
+    title: 'Modern Üretim Atölyemiz',
+    subtitle: 'Otomasyonlu PVC & Doğrama Altyapısı',
+    description:
+      'Antalya Döşemealtı’ndaki full donanımlı üretim parkurumuzda, otomasyonlu CNC ve kaynak işleme merkezlerimizle hatasız kesim, hızlı imalat ve standart kalite güvencesi sağlıyoruz.',
+    highlights: [
+      'Full donanımlı üretim parkuru',
+      'Otomasyonlu işleme merkezleri',
+      'Profesyonel PVC üretim altyapısı',
+    ],
+    image: '/assets/aistudio/unnamed__11__1048210c.webp',
+  },
+];
+
+export interface PvcAluminumPhoto {
+  id: string;
+  src: string;
+  title: string;
+  caption: string;
+}
+
+export const PVC_ALUMINUM_GALLERY: PvcAluminumPhoto[] = [
+  {
+    id: 'pvc-kis-bahcesi',
+    src: '/assets/aistudio/unnamed__13__1bda31d6.webp',
+    title: 'Kış Bahçesi & Sürme PVC / Alüminyum Sistem',
+    caption: 'Antrasit profilli cam tavan ve sürme doğrama kış bahçesi uygulaması',
+  },
+  {
+    id: 'aluminyum-galeri-pencere',
+    src: '/assets/aistudio/unnamed__12__dc2f95af.webp',
+    title: 'Yüksek Tavan Alüminyum & PVC Doğrama',
+    caption: 'Çift kat yüksekliğindeki galeri boşluğuna antrasit doğrama montajı',
+  },
+  {
+    id: 'aluminyum-balkon-korkuluk',
+    src: '/assets/aistudio/unnamed__11__1048210c.webp',
+    title: 'Alüminyum Cam Korkuluk & Cephe Uygulaması',
+    caption: 'Modern cepheye uyumlu antrasit alüminyum küpeşte ve temperli cam korkuluk',
+  },
+  {
+    id: 'siyah-profil-dusakabin',
+    src: '/assets/aistudio/unnamed__10__7ee4f1f6.webp',
+    title: 'Siyah Profilli Temperli Cam Duşakabin',
+    caption: 'Mat siyah alüminyum profilli ve kumlamalı camlı özel ölçü duşakabin',
+  },
+];
+
+export interface PvcAluminumVideo {
+  id: string;
+  title: string;
+  category: string;
+  summary: string;
+  videoSrc: string;
+}
+
+export const PVC_ALUMINUM_VIDEOS: PvcAluminumVideo[] = [
+  {
+    id: 'pvc-karolajli-kapi',
+    title: 'Egepen Antrasit Çift Kanatlı PVC Kapı & Karolajlı Cam',
+    category: 'Egepen PVC',
+    summary:
+      'Antrasit ahşap dokulu Egepen PVC çift kanatlı kapı, karolajlı ısıcam ve yüksek yalıtımlı kilit mekanizması.',
+    videoSrc: '/assets/aistudio/1118_1__64f6fd22.mp4',
+  },
+  {
+    id: 'aluminyum-merdiven-korkuluk',
+    title: 'Alüminyum Merdiven & Galeri Korkuluk Uygulaması',
+    category: 'Alüminyum Sistemler',
+    summary:
+      'Çok katlı merdiven ve galeri boşluğu için gold detaylı eloksal alüminyum korkuluk ve küpeşte montajı.',
+    videoSrc: '/assets/aistudio/1118_1ec71705.mp4',
   },
 ];
 

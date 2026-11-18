@@ -1,6 +1,6 @@
 import { useState, type FormEvent } from 'react';
 import { Phone, MapPin, ArrowUpRight, CheckCircle2, AlertCircle, MessageCircle, Instagram } from 'lucide-react';
-import { BUSINESS_INFO, SERVICES, getWhatsAppUrl } from '../data/erkanData';
+import { BUSINESS_INFO, PVC_ALUMINUM_SERVICES, SERVICES, getWhatsAppUrl } from '../data/erkanData';
 
 interface FormState {
   fullName: string;
@@ -312,11 +312,20 @@ export function Contact() {
                     onChange={(e) => setForm((f) => ({ ...f, service: e.target.value }))}
                     className="mt-2 w-full px-4 py-3 rounded-xl text-sm bg-[#F5F5F5] border border-[#0B0B0B]/15 text-[#0B0B0B] focus:outline-none focus:border-[#F97316] focus:bg-white"
                   >
-                    {SERVICES.map((srv) => (
-                      <option key={srv.id} value={srv.title}>
-                        {srv.title}
-                      </option>
-                    ))}
+                    <optgroup label="Mobilya & İç Mimari">
+                      {SERVICES.map((srv) => (
+                        <option key={srv.id} value={srv.title}>
+                          {srv.title}
+                        </option>
+                      ))}
+                    </optgroup>
+                    <optgroup label="PVC & Alüminyum Cephe">
+                      {PVC_ALUMINUM_SERVICES.map((srv) => (
+                        <option key={srv.id} value={srv.title}>
+                          {srv.title}
+                        </option>
+                      ))}
+                    </optgroup>
                   </select>
                 </div>
 

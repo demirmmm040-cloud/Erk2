@@ -6,6 +6,7 @@ import { VideoShowcase } from './components/VideoShowcase';
 import { WhyArchitect } from './components/WhyArchitect';
 import { About } from './components/About';
 import { Services } from './components/Services';
+import { PvcAluminumSection } from './components/PvcAluminumSection';
 import { WhyErkan } from './components/WhyErkan';
 import { Reviews } from './components/Reviews';
 import { ProjectsGallery } from './components/ProjectsGallery';
@@ -65,6 +66,7 @@ export default function App() {
             <WhyArchitect />
             <About compact onReadMore={() => handleNavigate('hakkimizda')} />
             <Services compact onViewAll={() => handleNavigate('hizmetlerimiz')} />
+            <PvcAluminumSection compact onViewPage={() => handleNavigate('pvc-aluminyum')} />
             <WhyErkan onViewProcess={() => handleNavigate('uretim')} />
             <Reviews />
             <ProjectsGallery />
@@ -100,6 +102,20 @@ export default function App() {
             />
             <Services />
             <ProjectsGallery />
+            <Contact />
+          </>
+        )}
+
+        {activePage === 'pvc-aluminyum' && (
+          <>
+            <PageHeader
+              eyebrow="PVC & Cephe Sistemleri"
+              title="Egepen PVC ve Alüminyum Cephe Sistemleri"
+              description="Tam donanımlı, otomasyonlu işleme merkezine sahip üretim atölyemizde Egepen PVC pencere-kapı sistemleri ve modern alüminyum cephe çözümleri sunuyoruz."
+              currentLabel="PVC & Alüminyum"
+              onNavigate={handleNavigate}
+            />
+            <PvcAluminumSection />
             <Contact />
           </>
         )}

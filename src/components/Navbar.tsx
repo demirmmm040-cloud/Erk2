@@ -55,7 +55,7 @@ export function Navbar({ activePage, onNavigate }: NavbarProps) {
         {/* Zone 2: Multi-page single-line navigation */}
         <nav
           aria-label="Ana Menü"
-          className="hidden lg:flex items-center gap-5 xl:gap-7 text-[13px] font-bold tracking-wide"
+          className="hidden lg:flex items-center gap-4 xl:gap-6 text-[13px] font-bold tracking-wide"
         >
           {NAV_ROUTES.map((route) => {
             const isActive = activePage === route.id;

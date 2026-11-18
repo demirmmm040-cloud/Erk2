@@ -18,7 +18,7 @@ export function Services({ compact = false, onViewAll }: ServicesProps) {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center pb-14 border-b border-white/10">
           <div className="lg:col-span-6">
             <p className="text-xs tracking-[0.2em] uppercase text-[#F97316] font-bold">
-              Hizmetlerimiz · Proje · Tasarım · Uygulama
+              Mobilya &amp; İç Mimari Hizmetlerimiz
             </p>
             <h2
               className="mt-3 font-display text-3xl sm:text-4xl lg:text-[2.7rem] font-bold leading-[1.12] text-white"
