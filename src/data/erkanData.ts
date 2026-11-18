@@ -4,7 +4,7 @@ export const BUSINESS_INFO = {
   shortAddress: 'Yeşilbayır, Atatürk Cd. No:43 · Döşemealtı, Antalya',
   phoneDisplay: '0533 503 04 47',
   phoneHref: 'tel:+905335030447',
-  whatsappNumber: '905335034047',
+  whatsappNumber: '905335030447',
   whatsappDefaultMessage:
     "Merhaba, EFM Interiors'tan mobilya ve iç mimari hizmetleriniz hakkında bilgi ve fiyat teklifi almak istiyorum.",
   googleRating: '4,9',
